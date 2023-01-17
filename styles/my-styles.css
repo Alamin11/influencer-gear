@@ -12,9 +12,9 @@ body {
 
 /* Header section styles */
 .header {
-    background-image: url('../images/Circle\ design.svg');
+    /* background-image: url('../images/Circle\ design.svg');
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right bottom; */
     /* margin-bottom: 50px; */
     margin: 0 50px 80px 50px;
 
@@ -78,6 +78,12 @@ body {
     /* height: 40px; */
     color: #FFFFFF;
     padding: 12px 24px;
+}
+
+.circle {
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 .circle img {
@@ -213,9 +219,9 @@ body {
 /* Responsiveness for mobile devices */
 @media screen and (max-width:576px) {
     .header {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
+        /* background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 80%; */
         margin: 0 10px 10px 10px;
 
     }
@@ -224,7 +230,7 @@ body {
         align-items: center;
         justify-content: space-evenly;
         /* justify-items: center; */
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .nav ul {
@@ -240,7 +246,50 @@ body {
     }
 
     .banner-container {
-        flex-direction: column reverse;
+        flex-direction: column-reverse;
+        align-items: center;
+        /* justify-content: center; */
+        text-align: center;
+        justify-items: center;
+        /* margin-left: 50px; */
     }
+
+    .circle {
+        background-position: center;
+        background-size: 100%;
+        /* padding-left: 10%; */
+        /* margin-left: 50px; */
+    }
+
+    .circle img {
+        width: 85%;
+    }
+
+    .market {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* width: 100%; */
+        gap: 20px;
+    }
+
+    .market-logo {
+        flex: 15%;
+    }
+
+    .collection-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured-container {
+        flex-direction: column-reverse;
+        /* margin: 50px 50px; */
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
 
 }
